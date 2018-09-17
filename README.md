@@ -1,1 +1,1 @@
-# csc394c-group-2-project
+# csc394-group-2-project
