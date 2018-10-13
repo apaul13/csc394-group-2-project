@@ -1,0 +1,51 @@
+CREATE TABLE STUDENT(
+    FNAME            VARCHAR2(20),
+    LNAME            VARCHAR2(20),
+    Status           VARCHAR2(20),
+    City             VARCHAR2(20),
+    Degree           VARCHAR2(20),
+    EMAIL            VARCHAR2(50)
+                     PRIMARY KEY,
+    Experience       VARCHAR2(1000),
+    studentSkills    VARCHAR(100)
+);
+
+CREATE TABLE JOBS (
+    JobTitle        VARCHAR2(35),
+    City            VARCHAR2(20),
+    Field           VARCHAR2(20),
+    jobs_Skills     VARCHAR2(100)
+);
+
+CREATE TABLE SKILLS (
+    Skills           VARCHAR2(100)
+);
+
+INSERT INTO STUDENT
+    VALUES ( 'Jeff', 'Wirtz', 'Senior', 'Oak Park', 'BS-Computer Science', 'wirtz101@yahoo.com', 'java', 'Team experience');
+    
+INSERT INTO STUDENT
+    VALUES ('Michael', 'Donata', 'Senior', 'Chicago', 'BS-Computer Science', 'mdonata@depaul.edu', 'java, C++, Python, Compiler', 'Manager experience');
+    
+INSERT INTO JOBS
+    VALUES ('Programmer', 'Oak Park', 'Computer Science', 'Team experience');
+
+INSERT INTO SKILLS
+    VALUES( 'Manager Experience');
+    
+INSERT INTO SKILLS
+    VALUES( 'Team Experience');
+    
+INSERT INTO SKILLS
+    VALUES( 'Java');
+    
+INSERT INTO SKILLS
+    VALUES( 'Python');
+    
+INSERT INTO SKILLS
+    VALUES( 'C++');
+    
+    
+SELECT * FROM STUDENT;
+SELECT * FROM SKILLS;
+SELECT * FROM JOBS;
